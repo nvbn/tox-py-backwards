@@ -17,6 +17,7 @@ mkdir .tox/py_backwards/
 cp -a * .tox/py_backwards/
 py-backwards -i .tox/py_backwards/ -o .tox/py_backwards/ -t $VERSION
 cd .tox/py_backwards/
+pip install -I .
 {}
 rm -rf .tox/py_backwards/
 '''
